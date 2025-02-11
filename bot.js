@@ -33,7 +33,7 @@ client.on('messageCreate', async (msg) => {
     }
 });
 
-client.login(process.env.DICORD_TOKEN);
+client.login(process.env.DISCORD_TOKEN);
 
 const keepAlive = () => {
     require('http').createServer((req, res) => res.end("Bot está online!")).listen(3000);
